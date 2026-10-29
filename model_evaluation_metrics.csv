@@ -1,0 +1,5 @@
+Metric,Score (%)
+Accuracy,98.32
+Phishing Precision,98.3
+Phishing Recall,97.17
+Phishing F1-Score,97.73

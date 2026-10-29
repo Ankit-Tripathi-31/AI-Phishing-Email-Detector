@@ -1,0 +1,5 @@
+Email Preview,Prediction,Phishing Score (%),Safety Advice
+URGENT: Click here to verify your bank password immediately.,Phishing Email,89.97,Warning: This email resembles phishing messages. Do not click links or share passwords or OTPs.
+"Hi team, our meeting is scheduled for tomorrow at 10 AM.",Safe Email,10.72,No strong phishing pattern detected. Still verify the sender and links before taking action.
+Congratulations! You won a prize. Send your OTP to claim it.,Phishing Email,54.82,Warning: This email resembles phishing messages. Do not click links or share passwords or OTPs.
+Please find the project report attached for your review.,Safe Email,4.98,No strong phishing pattern detected. Still verify the sender and links before taking action.

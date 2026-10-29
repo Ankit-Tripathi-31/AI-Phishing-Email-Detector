@@ -1,0 +1,11 @@
+{
+    "project_name": "AI Phishing Email Detector",
+    "model": "TF-IDF + Logistic Regression",
+    "dataset_rows_after_cleaning": 17521,
+    "training_samples": 14016,
+    "testing_samples": 3505,
+    "accuracy_percent": 98.32,
+    "phishing_precision_percent": 98.3,
+    "phishing_recall_percent": 97.17,
+    "phishing_f1_score_percent": 97.73
+}
