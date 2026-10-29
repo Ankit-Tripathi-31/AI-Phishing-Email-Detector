@@ -1,17 +1,22 @@
-# AI Phishing Email Detector
+# 🛡️ AI Phishing Email Detector
 
-## Overview
-A beginner-friendly cybersecurity project that uses Machine
-Learning and Natural Language Processing (NLP) to classify
-email text as Safe Email or Phishing Email.
+A beginner-friendly cybersecurity and machine learning project that detects potential phishing emails using Natural Language Processing (NLP) and Logistic Regression.
 
-## Problem Statement
-Phishing emails can trick people into revealing passwords,
-financial information, or one-time passwords (OTPs).
-This project explores automated detection of suspicious
-email text.
+## 📌 Project Overview
 
-## Technologies Used
+Phishing emails often attempt to steal passwords, financial information, and one-time passwords (OTPs). This project analyzes email text and predicts whether it resembles a phishing email or a safe email.
+
+## ✨ Features
+
+- Email text classification
+- Interactive email analyzer in Google Colab
+- Batch analysis of multiple emails
+- Estimated phishing probability score
+- Safety recommendations
+- Model evaluation metrics and confusion matrix
+
+## 🧰 Technologies Used
+
 - Python
 - Pandas
 - Scikit-learn
@@ -20,54 +25,64 @@ email text.
 - Matplotlib
 - Google Colab
 
-## How It Works
-1. Load and clean the email dataset.
-2. Remove missing, duplicate, and placeholder email text.
-3. Split data into training and testing sets.
-4. Convert email text into numerical features using TF-IDF.
+## ⚙️ How It Works
+
+1. Load and inspect the email dataset.
+2. Clean missing values, duplicate messages, and placeholder records.
+3. Split the data into training and testing sets.
+4. Transform email text using TF-IDF.
 5. Train a Logistic Regression classifier.
 6. Predict email categories and estimate phishing scores.
-7. Evaluate performance using classification metrics.
+7. Evaluate the model using accuracy, precision, recall, and F1-score.
 
-## Dataset
-The cleaned dataset contains 17,521 email records:
-- Safe Email: 10,978
-- Phishing Email: 6,543
+## 📊 Dataset and Results
 
-The data was split into training and testing sets using
-an 80/20 stratified split.
+- Cleaned records: 17,521
+- Training samples: 14,016
+- Testing samples: 3,505
+- Model: TF-IDF + Logistic Regression
+- Test-set accuracy: 98.32%
+- Phishing recall: approximately 97.17%
 
-## Model
-TF-IDF + Logistic Regression
+These metrics describe performance on the selected test dataset and do not guarantee equivalent performance on real-world emails.
 
-## Evaluation
-The initial test-set accuracy was 98.32%.
-Phishing recall was approximately 97.17%.
+## 📁 Project Files
 
-These are dataset-specific results and do not guarantee
-the same performance on new, real-world emails.
+- `AI_Phishing_Email_Detector.ipynb` — development and analysis notebook
+- `phishing_detector_model.joblib` — trained model
+- `batch_analysis_results.csv` — sample batch predictions
+- `model_evaluation_metrics.csv` — evaluation metrics
+- `project_summary.json` — project summary
+- `README.md` — project documentation
 
-## Features
-- Single-email analysis
-- Interactive email input in Google Colab
-- Batch email analysis
-- Estimated phishing score
-- Safety recommendations
-- Model evaluation chart
+## 🚀 Run the Project
 
-## Limitations
-- The model can produce false positives and false negatives.
-- A high or low score does not guarantee that an email is safe.
-- The current prototype analyzes email text, not full email
-  headers, sender authentication, or destination URL behavior.
-- Avoid pasting real confidential emails into the demo.
+1. Open the notebook on GitHub.
+2. Select **Open in Colab** if the option is available, or download the notebook and upload it to Google Colab.
+3. Follow the notebook cells in order.
+4. Run the training cells before using functions that depend on the trained model.
 
-## Future Improvements
+## ⚠️ Limitations
+
+- Predictions can be incorrect.
+- A high phishing score is not proof of malicious intent.
+- A low score does not guarantee an email is safe.
+- The prototype analyzes text only; it does not verify sender authentication or inspect link destinations.
+- Do not submit confidential emails to a public demo.
+
+## 🔮 Future Improvements
+
 - Build a web dashboard.
-- Test on an independent, newer dataset.
-- Analyze URLs and sender information safely.
-- Improve detection of previously unseen phishing patterns.
+- Test against a separate, newer dataset.
+- Analyze suspicious URLs and sender information.
+- Improve detection of previously unseen phishing attacks.
 
-## Disclaimer
-This project is an educational prototype and should not be
-used as the sole method of deciding whether an email is safe.
+## 📚 Disclaimer
+
+This project is for educational and portfolio purposes. It should not be used as the sole basis for deciding whether an email is safe.
+
+## 👨‍💻 Author
+
+**Ankit Tripathi**
+
+Aspiring technology professional interested in cybersecurity, machine learning, and practical problem-solving.
